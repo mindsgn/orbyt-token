@@ -1,0 +1,381 @@
+{
+  "contractName": "OrbToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "Token",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"Token\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/mindsgn/projects/orbyt/orbyt-token/contracts/Token.sol\":\"OrbToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/mindsgn/projects/orbyt/orbyt-token/contracts/Token.sol\":{\"keccak256\":\"0xfb502e61f9211ec9b08e83afc2e44c1555f99db902d982551f784d318c9a3352\",\"urls\":[\"bzz-raw://68310e4ff4c53d9dbaa7061c967150191ef1b6d24204dd69d6f8b3c254afd0e3\",\"dweb:/ipfs/QmWZGLN96N5aoszzF87k7KzQ3A2u81dU22rxNHojvFBkX1\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50609b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806318160ddd146037578063c241267614604f575b600080fd5b603d6057565b60408051918252519081900360200190f35b6055605d565b005b60005481565b620f424060005556fea265627a7a72315820f65ebbd4c2a34f0cde964785b28c8f858daeb9a7340392adc6075851cd5d243864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806318160ddd146037578063c241267614604f575b600080fd5b603d6057565b60408051918252519081900360200190f35b6055605d565b005b60005481565b620f424060005556fea265627a7a72315820f65ebbd4c2a34f0cde964785b28c8f858daeb9a7340392adc6075851cd5d243864736f6c63430005100032",
+  "sourceMap": "26:199:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:199:2;;;;;;;",
+  "deployedSourceMap": "26:199:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:199:2;;;;;;;;;;;;;;;;;;;;;;;;129:26;;;:::i;:::-;;;;;;;;;;;;;;;;162:61;;;:::i;:::-;;129:26;;;;:::o;162:61::-;209:7;195:11;:21;162:61::o",
+  "source": "pragma solidity ^0.5.16;\n\ncontract OrbToken{\n    //construction\n    //set total Tokens\n    //read the total number of tokens\n    uint256 public totalSupply;\n\n    function Token() public{\n        totalSupply = 1000000;\n    }\n}\n",
+  "sourcePath": "/Users/mindsgn/projects/orbyt/orbyt-token/contracts/Token.sol",
+  "ast": {
+    "absolutePath": "/Users/mindsgn/projects/orbyt/orbyt-token/contracts/Token.sol",
+    "exportedSymbols": {
+      "OrbToken": [
+        70
+      ]
+    },
+    "id": 71,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 59,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 70,
+        "linearizedBaseContracts": [
+          70
+        ],
+        "name": "OrbToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 70,
+            "src": "129:26:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 60,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "129:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 68,
+              "nodeType": "Block",
+              "src": "185:38:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 66,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 64,
+                      "name": "totalSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 61,
+                      "src": "195:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31303030303030",
+                      "id": 65,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "209:7:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000000_by_1",
+                        "typeString": "int_const 1000000"
+                      },
+                      "value": "1000000"
+                    },
+                    "src": "195:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 67,
+                  "nodeType": "ExpressionStatement",
+                  "src": "195:21:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 69,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Token",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "176:2:2"
+            },
+            "returnParameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "185:0:2"
+            },
+            "scope": 70,
+            "src": "162:61:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 71,
+        "src": "26:199:2"
+      }
+    ],
+    "src": "0:226:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/mindsgn/projects/orbyt/orbyt-token/contracts/Token.sol",
+      "exportedSymbols": {
+        "OrbToken": [
+          70
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 59,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            70
+          ],
+          "name": "OrbToken",
+          "scope": 71
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalSupply",
+              "scope": 70,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 60,
+                "name": "ElementaryTypeName",
+                "src": "129:7:2"
+              }
+            ],
+            "id": 61,
+            "name": "VariableDeclaration",
+            "src": "129:26:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Token",
+              "scope": 70,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 62,
+                "name": "ParameterList",
+                "src": "176:2:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 63,
+                "name": "ParameterList",
+                "src": "185:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 61,
+                              "type": "uint256",
+                              "value": "totalSupply"
+                            },
+                            "id": 64,
+                            "name": "Identifier",
+                            "src": "195:11:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31303030303030",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1000000",
+                              "value": "1000000"
+                            },
+                            "id": 65,
+                            "name": "Literal",
+                            "src": "209:7:2"
+                          }
+                        ],
+                        "id": 66,
+                        "name": "Assignment",
+                        "src": "195:21:2"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "ExpressionStatement",
+                    "src": "195:21:2"
+                  }
+                ],
+                "id": 68,
+                "name": "Block",
+                "src": "185:38:2"
+              }
+            ],
+            "id": 69,
+            "name": "FunctionDefinition",
+            "src": "162:61:2"
+          }
+        ],
+        "id": 70,
+        "name": "ContractDefinition",
+        "src": "26:199:2"
+      }
+    ],
+    "id": 71,
+    "name": "SourceUnit",
+    "src": "0:226:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-19T23:54:42.655Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
